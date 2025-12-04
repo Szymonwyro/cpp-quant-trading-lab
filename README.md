@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # C++ Quant Trading Lab
 
 A modular, event-driven C++ research framework for quant trading and financial experimentation.  
@@ -44,6 +43,8 @@ Performance and Metrics
 
 ## Repository Structure
 
+```text
+
 cpp-quant-trading-lab/
 │
 ├── CMakeLists.txt
@@ -88,6 +89,8 @@ cpp-quant-trading-lab/
 ├── scripts/
 │
 └── docs/ (Design Notes and Diagrams)
+
+```
 
 ## Implemented Components
 
