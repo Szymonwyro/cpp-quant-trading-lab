@@ -1,0 +1,103 @@
+~~~~~~~~~~~~~~~~ PROJECT PLAN ~~~~~~~~~~~~~~~~
+
+1. Market Data Foundations
+    1.1. Market Data Parser
+        include/market_data/
+        ├── csv_reader.hpp
+        ├── market_bar.hpp
+        └── timestamp.hpp
+        src/market_data/
+        ├── csv_reader.cpp
+        └── timestamp.cpp
+        apps/data_tools/
+        └── parse_csv.cpp
+
+    1.2. Order Book Snapshot Simulator
+        include/market_data/
+        ├── order_book.hpp
+        ├── price_level.hpp
+        └── book_metrics.hpp
+        src/market_data/
+        ├── order_book.cpp
+        └── book_metrics.cpp
+        apps/data_tools/
+        └── book_simulator.cpp
+
+
+2. Core Quant Metrics & Analytics
+    2.1. Returns & Volatility Engine
+        include/analytics/
+        ├── returns.hpp
+        ├── rolling_window.hpp
+        ├── volatility.hpp
+        └── performance_metrics.hpp
+        src/analytics/
+        ├── returns.cpp
+        ├── volatility.cpp
+        └── performance_metrics.cpp
+        apps/analytics_tools/
+        └── pnl_analysis.cpp
+
+    2.2. Transaction Cost Model
+        include/execution/
+        ├── transaction_cost_model.hpp
+        ├── slippage_model.hpp
+        └── fill_price.hpp
+        src/execution/
+        ├── transaction_cost_model.cpp
+        └── slippage_model.cpp
+
+
+3. Trading Logic
+    3.1. Event-Driven Strategy Outline
+        include/strategy/
+        ├── strategy.hpp
+        ├── signal.hpp
+        └── portfolio.hpp
+        src/strategy/
+        ├── moving_average_strategy.cpp
+        └── portfolio.cpp
+        apps/backtest/
+        └── run_backtest.cpp
+
+    3.2. Risk Management Module
+        include/risk/
+        ├── risk_manager.hpp
+        ├── position_limits.hpp
+        └── drawdown_control.hpp
+        src/risk/
+        ├── risk_manager.cpp
+        └── drawdown_control.cpp
+
+4. Performance & Systems THinking
+    4.1. Latency Benchmarking Tool
+        benchmarks/
+        ├── order_latency.cpp
+        ├── strategy_latency.cpp
+        └── container_bench.cpp
+        apps/benchmarks/
+        └── run_benchmarks.cpp
+
+    4.2. Memory Pool / Object Reuse
+        include/utils/
+        ├── memory_pool.hpp
+        └── object_pool.hpp
+        src/utils/
+        └── memory_pool.cpp
+
+
+5. Non-overengineered ML
+    5.1. Feature Engineering Pipeline
+        include/analytics/
+        ├── features.hpp
+        └── feature_pipeline.hpp
+        src/analytics/
+        └── feature_pipeline.cpp
+        apps/analytics_tools/
+        └── export_features.cpp
+
+    5.2. Strategy Cross-Validation Tool
+        include/analytics/
+        └── walk_forward.hpp
+        src/analytics/
+        └── walk_forward.cpp
