@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # C++ Quant Trading Lab
 
 A modular, event-driven C++ research framework for quant trading and financial experimentation.  
